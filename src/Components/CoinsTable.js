@@ -51,6 +51,7 @@ const CoinsTable = () => {
   console.log(coins);
   useEffect(() => {
     fetchCoins();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
   const classes = useStyles();
   const navigate = useNavigate();

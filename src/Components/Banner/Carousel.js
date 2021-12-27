@@ -34,6 +34,7 @@ const Carousel = () => {
   console.log(trending);
   useEffect(() => {
     fetchTrendingCoins();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
   const items = trending.map((coin) => {
     let profit = coin.price_change_percentage_24h >= 0;
