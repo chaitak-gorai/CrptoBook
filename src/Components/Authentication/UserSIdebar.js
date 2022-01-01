@@ -176,6 +176,7 @@ export default function UserSIdebar() {
                         </div>
                       );
                     }
+                    return null;
                   })}
                 </div>
               </div>
